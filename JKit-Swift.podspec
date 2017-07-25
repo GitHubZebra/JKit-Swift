@@ -14,7 +14,7 @@ s.platform = :ios
 s.ios.deployment_target = '8.0'
 
 s.source       = { :git => "https://github.com/GitHubZebra/JKit-Swift.git", :tag => s.version }
-s.source_files = "JKit-Swift/*.{h,m,plist}"
+s.source_files = "JKit-Swift/**/*.{swift,plist}"
 s.requires_arc = true
 
 s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
