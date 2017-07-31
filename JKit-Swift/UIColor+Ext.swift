@@ -13,7 +13,7 @@ public func RGBA ( r: CGFloat, g: CGFloat, b: CGFloat, a: CGFloat ) -> UIColor {
     return UIColor(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }
 
-public func JColorFromHex( _ hex: Int ) -> UIColor {
+public func JColorFromHex( _ hex: UInt ) -> UIColor {
     
     return UIColor.j_color(fromHex: hex)
 }
@@ -21,12 +21,12 @@ public func JColorFromHex( _ hex: Int ) -> UIColor {
 extension UIColor {
     
     //MARK: -16进制转为UIColor
-    public static func j_color( fromHex hex: Int, alpha: CGFloat = 1.0) -> UIColor {
+    public static func j_color( fromHex hex: UInt, alpha: CGFloat = 1.0) -> UIColor {
         
-        return RGBA(r: CGFloat((hex & 0xFF0000) >> 16) / 255, g: CGFloat((hex & 0xFF00) >> 16) / 255, b: CGFloat((hex & 0xFF) >> 16) / 255, a: alpha)
+        return RGBA(r: CGFloat((hex & 0xFF0000) >> 16) , g: CGFloat((hex & 0x00FF00) >> 8), b: CGFloat((hex & 0x0000FF)) , a: alpha)
     }
     
-    public static func j_color( fromHex hex: Int ) -> UIColor {
+    public static func j_color( fromHex hex: UInt ) -> UIColor {
         
         return UIColor.j_color(fromHex: hex, alpha: 1.0)
     }
