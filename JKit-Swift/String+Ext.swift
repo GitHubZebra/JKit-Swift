@@ -48,8 +48,8 @@ public enum Validate {
     
     var isRight: Bool {
         
-        var predicateStr:String!
-        var currObject:String!
+        var predicateStr: String!
+        var currObject: String!
         
         switch self {
             
@@ -98,8 +98,14 @@ public enum Validate {
             currObject = str
         }
         
-        let predicate = NSPredicate(format: "SELF MATCHES %@" ,predicateStr)
-        return predicate.evaluate(with: currObject)
+        guard let regex = try? NSRegularExpression(pattern: predicateStr, options: NSRegularExpression.Options(rawValue:0)), currObject != nil else {
+            
+            return false
+        }
+        
+        let res = regex.matches(in: currObject, options: NSRegularExpression.MatchingOptions(rawValue:0), range: NSMakeRange(0, currObject.characters.count))
+        
+        return res.count > 0 ? true : false
     }
 }
 
