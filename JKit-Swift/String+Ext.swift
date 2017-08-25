@@ -153,26 +153,60 @@ extension String {
     }
     
     //MARK: -判断
+    
+    /// 邮箱判断
+    ///
+    /// - Returns: true/false
     public func j_isEmail() -> Bool { return Validate.email(self).isRight }
     
+    /// 手机号判断
+    ///
+    /// - Returns: true/false
     public func j_isMobile() -> Bool { return Validate.phoneNum(self).isRight }
     
+    /// 钱规则判断
+    ///
+    /// - Returns: true/false
     public func j_isMoney() -> Bool { return Validate.money(self).isRight }
     
+    /// 数字判断
+    ///
+    /// - Returns: true/false
     public func j_isNumber() -> Bool { return Validate.number(self).isRight }
     
+    /// 身份证号判断
+    ///
+    /// - Returns: true/false
     public func j_isIdentityCard() -> Bool { return Validate.identityCard(self).isRight }
     
+    /// 用户名判断 无特殊字符 6-18 位
+    ///
+    /// - Returns: true/false
     public func j_isUserName() -> Bool { return Validate.username(self).isRight }
     
+    /// 密码判断 无特殊字符 6-18 位
+    ///
+    /// - Returns: true/false
     public func j_isPassword() -> Bool { return Validate.password(self).isRight }
     
+    /// 昵称判断 中文 4-8 位
+    ///
+    /// - Returns: true/false
     public func j_isNickname() -> Bool { return Validate.nickname(self).isRight }
     
+    ///  URL 判断
+    ///
+    /// - Returns: true/false
     public func j_isURL() -> Bool { return Validate.URL(self).isRight }
     
+    ///  IP 判断
+    ///
+    /// - Returns: true/false
     public func j_isIP() -> Bool { return Validate.IP(self).isRight }
     
+    /// 中文判断
+    ///
+    /// - Returns: true/false
     public func j_isChinese() -> Bool { return Validate.chinese(self).isRight }
     
     //MARK: -计算文字的 size
@@ -219,6 +253,26 @@ extension String {
     public func j_height( font: UIFont, constrainedSize: CGSize) -> CGFloat {
         
         return j_size(font: font, constrainedSize: constrainedSize).height
+    }
+    
+    /// json -> 数组
+    ///
+    /// - Returns: Array<Any>?
+    func j_toArray() -> [Any]? {
+        
+        let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
+        
+        return jsonObject as? [Any]
+    }
+    
+    /// json -> 字典
+    ///
+    /// - Returns: [String: Any]?
+    func j_toDictionary() -> [String: Any]? {
+        
+        let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
+        
+        return jsonObject as? [String: Any]
     }
     
     /// 返回沙盒文件路径

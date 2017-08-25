@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		150B9D2C1F50069E00960075 /* Array_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B9D2B1F50069E00960075 /* Array_Ext.swift */; };
+		150B9D2E1F5006DE00960075 /* Dictionary_Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 150B9D2D1F5006DE00960075 /* Dictionary_Ext.swift */; };
 		15103EFB1F25EC6B00E9147A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15103EFA1F25EC6B00E9147A /* AppDelegate.swift */; };
 		15103EFD1F25EC6B00E9147A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15103EFC1F25EC6B00E9147A /* ViewController.swift */; };
 		15103F001F25EC6B00E9147A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15103EFE1F25EC6B00E9147A /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150B9D2B1F50069E00960075 /* Array_Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array_Ext.swift; sourceTree = "<group>"; };
+		150B9D2D1F5006DE00960075 /* Dictionary_Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dictionary_Ext.swift; sourceTree = "<group>"; };
 		15103EF71F25EC6B00E9147A /* JKit-SwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JKit-SwiftDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		15103EFA1F25EC6B00E9147A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		15103EFC1F25EC6B00E9147A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				15484B7C1F26DBDB00AA7810 /* JConfig.swift */,
 				15484B7D1F26DBDB00AA7810 /* NavBarBackButton+Ext.swift */,
 				15484B7E1F26DBDB00AA7810 /* String+Ext.swift */,
+				150B9D2B1F50069E00960075 /* Array_Ext.swift */,
+				150B9D2D1F5006DE00960075 /* Dictionary_Ext.swift */,
 				15484B7F1F26DBDB00AA7810 /* UIBarButtonItem+Ext.swift */,
 				15484B801F26DBDB00AA7810 /* UIColor+Ext.swift */,
 				15484B811F26DBDB00AA7810 /* UIText+Ext.swift */,
@@ -173,6 +179,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				150B9D2C1F50069E00960075 /* Array_Ext.swift in Sources */,
+				150B9D2E1F5006DE00960075 /* Dictionary_Ext.swift in Sources */,
 				15484B881F26DBDB00AA7810 /* UIColor+Ext.swift in Sources */,
 				15484B851F26DBDB00AA7810 /* NavBarBackButton+Ext.swift in Sources */,
 				15484B8B1F26DBDB00AA7810 /* UIViewController+Ext.swift in Sources */,
