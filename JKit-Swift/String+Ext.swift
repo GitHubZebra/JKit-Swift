@@ -58,7 +58,7 @@ public enum Validate {
             currObject = str
             
         case let .phoneNum(str):
-            predicateStr = "^((13[0-9])|(15[^4,\\D]) |(17[0,0-9])|(18[0,0-9]))\\d{8}$"
+            predicateStr = "^((13[0,0-9])|(15[0,0-9])|(17[0,0-9])|(18[0,0-9]))\\d{8}$"
             currObject = str
             
         case let .username(str):
