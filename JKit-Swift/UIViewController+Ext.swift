@@ -16,18 +16,18 @@ extension UIViewController {
         let noteCenter = NotificationCenter.default
         
         let viewDismissKeyboardTapGR = UITapGestureRecognizer(target: self, action: #selector(tapAnywhereToDismissKeyboard(_:)))
-        let navBarDismissKeyboardTapGR = UITapGestureRecognizer(target: self, action: #selector(tapAnywhereToDismissKeyboard(_:)))
+//        let navBarDismissKeyboardTapGR = UITapGestureRecognizer(target: self, action: #selector(tapAnywhereToDismissKeyboard(_:)))
         
         noteCenter.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (note) in
             
             self.view.addGestureRecognizer(viewDismissKeyboardTapGR)
-            self.navigationController?.navigationBar.addGestureRecognizer(navBarDismissKeyboardTapGR)
+//            self.navigationController?.navigationBar.addGestureRecognizer(navBarDismissKeyboardTapGR)
         }
         
         noteCenter.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: OperationQueue.main) { (note) in
             
             self.view.removeGestureRecognizer(viewDismissKeyboardTapGR)
-            self.navigationController?.navigationBar.removeGestureRecognizer(navBarDismissKeyboardTapGR)
+//            self.navigationController?.navigationBar.removeGestureRecognizer(navBarDismissKeyboardTapGR)
         }
     }
     
