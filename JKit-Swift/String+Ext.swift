@@ -258,7 +258,7 @@ extension String {
     /// json -> 数组
     ///
     /// - Returns: Array<Any>?
-    func j_toArray() -> [Any]? {
+    public func j_toArray() -> [Any]? {
         
         let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
         
@@ -268,7 +268,7 @@ extension String {
     /// json -> 字典
     ///
     /// - Returns: [String: Any]?
-    func j_toDictionary() -> [String: Any]? {
+    public func j_toDictionary() -> [String: Any]? {
         
         let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
         

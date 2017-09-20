@@ -23,11 +23,11 @@ public let JScreenHeight: CGFloat = JScreenSize.height
 /// 当前系统版本
 public let JVersion: Float = (UIDevice.current.systemVersion as NSString).floatValue
 
-public let JiPhone4: Bool = (JScreenWidth == 480)
-public let JiPhone5: Bool = (JScreenWidth == 568)
-public let JiPhone6: Bool = (JScreenWidth == 667)
-public let JiPhone6P: Bool = (JScreenWidth == 736)
-public let JiPhoneX: Bool = (JScreenWidth == 818)
+public let JiPhone4: Bool = (JScreenHeight == 480)
+public let JiPhone5: Bool = (JScreenHeight == 568)
+public let JiPhone6: Bool = (JScreenHeight == 667)
+public let JiPhone6P: Bool = (JScreenHeight == 736)
+public let JiPhoneX: Bool = (JScreenHeight == 812)
 
 public let JiOS8: Bool = (JVersion >= 8 && JVersion < 9)
 public let JiOS9: Bool = (JVersion >= 9 && JVersion < 10)

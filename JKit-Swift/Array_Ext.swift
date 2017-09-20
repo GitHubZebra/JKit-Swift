@@ -13,7 +13,7 @@ extension Array {
     /// 数组 -> json
     ///
     /// - Returns: json
-    func toJson() -> String {
+    public func toJson() -> String {
         
         let data = try? JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
         
