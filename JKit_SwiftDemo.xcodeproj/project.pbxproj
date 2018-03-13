@@ -329,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F442F4GFX;
 				INFOPLIST_FILE = JKit_SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zebra.JKit-SwiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -344,6 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9F442F4GFX;
 				INFOPLIST_FILE = JKit_SwiftDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Zebra.JKit-SwiftDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
