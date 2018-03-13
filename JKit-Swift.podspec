@@ -17,5 +17,5 @@ s.source       = { :git => "https://github.com/GitHubZebra/JKit-Swift.git", :tag
 s.source_files = "JKit-Swift/**/*.{swift,plist}"
 s.requires_arc = true
 
-s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+s.pod_target_xcconfig = { 'SWIFT_VERSION' => '4.0' }
 end
