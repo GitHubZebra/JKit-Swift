@@ -17,5 +17,5 @@ s.source       = { :git => "https://github.com/GitHubZebra/JKit-Swift.git", :tag
 s.source_files = "JKit_Swift/**/*.{swift,plist}"
 s.requires_arc = true
 
-s.swift_version = 4.0
+s.swift_version = '4.0'
 end
