@@ -17,12 +17,12 @@ extension UITextField {
         
         NotificationCenter.default.addObserver(forName: .UITextFieldTextDidChange, object: nil, queue: OperationQueue.main) { (note) in
             
-            if (self.text?.characters.count)! > length && self.markedTextRange == nil {
+            if (self.text?.count)! > length && self.markedTextRange == nil {
                 
                 if let text = self.text {
                     
                     let index = text.index(text.startIndex, offsetBy: length)
-                    self.text = text.substring(to: index)
+                    self.text = String(text[..<index])
                 }
             }
         }
@@ -47,12 +47,12 @@ extension UITextView {
         
         NotificationCenter.default.addObserver(forName: .UITextViewTextDidChange, object: nil, queue: OperationQueue.main) { (note) in
             
-            if (self.text?.characters.count)! > length && self.markedTextRange == nil {
+            if (self.text?.count)! > length && self.markedTextRange == nil {
                 
                 if let text = self.text {
                     
                     let index = text.index(text.startIndex, offsetBy: length)
-                    self.text = text.substring(to: index)
+                    self.text = String(text[..<index])
                 }
             }
         }

@@ -13,7 +13,7 @@ extension Dictionary {
     /// 字典 -> json
     ///
     /// - Returns: json
-    public func toJson() -> String {
+    func toJson() -> String {
         
         let data = try? JSONSerialization.data(withJSONObject: self, options: JSONSerialization.WritingOptions.prettyPrinted)
         

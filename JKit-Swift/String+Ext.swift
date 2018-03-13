@@ -103,7 +103,7 @@ public enum Validate {
             return false
         }
         
-        let res = regex.matches(in: currObject, options: NSRegularExpression.MatchingOptions(rawValue:0), range: NSMakeRange(0, currObject.characters.count))
+        let res = regex.matches(in: currObject, options: NSRegularExpression.MatchingOptions(rawValue:0), range: NSMakeRange(0, currObject.count))
         
         return res.count > 0 ? true : false
     }
@@ -226,9 +226,9 @@ extension String {
             return resultSize
         }
         
-        let dic = NSDictionary(object: font, forKey: NSFontAttributeName as NSCopying)
+        let dic = NSDictionary(object: font, forKey: NSAttributedStringKey.font as NSCopying)
         
-        resultSize = self.boundingRect(with: constrainedSize, options: .usesLineFragmentOrigin, attributes: dic as? [String : AnyObject], context:nil).size
+        resultSize = self.boundingRect(with: constrainedSize, options: .usesLineFragmentOrigin, attributes: dic as? [NSAttributedStringKey : AnyObject], context:nil).size
         
         return resultSize
     }
@@ -258,7 +258,7 @@ extension String {
     /// json -> 数组
     ///
     /// - Returns: Array<Any>?
-    public func j_toArray() -> [Any]? {
+    func j_toArray() -> [Any]? {
         
         let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
         
@@ -268,7 +268,7 @@ extension String {
     /// json -> 字典
     ///
     /// - Returns: [String: Any]?
-    public func j_toDictionary() -> [String: Any]? {
+    func j_toDictionary() -> [String: Any]? {
         
         let jsonObject = try? JSONSerialization.jsonObject(with: self.data(using: String.Encoding.utf8)!, options: JSONSerialization.ReadingOptions.allowFragments)
         
