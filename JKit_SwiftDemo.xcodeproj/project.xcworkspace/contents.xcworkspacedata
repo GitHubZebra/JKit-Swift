@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:JKit-SwiftDemo.xcodeproj">
+      location = "self:JKit_SwiftDemo.xcodeproj">
    </FileRef>
 </Workspace>

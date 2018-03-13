@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  JKit-SwiftDemo
+//  JKit_SwiftDemo
 //
-//  Created by Zebra on 2017/7/24.
-//  Copyright © 2017年 Zebra. All rights reserved.
+//  Created by Zebra on 2018/3/13.
+//  Copyright © 2018年 Zebra. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-                
     }
 
     override func didReceiveMemoryWarning() {
