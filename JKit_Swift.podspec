@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
 s.name         = "JKit_Swift"
-s.version      = "1.2.2"
+s.version      = "1.2.3"
 s.summary      = "Fast iOS Develope App Kit"
 s.description  = <<-DESC
                     JKit_Swift 开发时用的Swift工具类,有问题联系作者: 1916561555
