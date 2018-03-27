@@ -11,7 +11,7 @@ import UIKit
 extension UIViewController {
     
     /// 点击空白处隐藏键盘
-    public func j_tapDismissKeyboard() {
+    public func j_swift_tapDismissKeyboard() {
         
         let noteCenter = NotificationCenter.default
         
