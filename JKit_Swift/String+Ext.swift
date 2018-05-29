@@ -46,7 +46,7 @@ public enum Validate {
     
     case identityCard( _: String )
     
-    var isRight: Bool {
+    public var isRight: Bool {
         
         var predicateStr: String!
         var currObject: String!

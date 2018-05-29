@@ -32,7 +32,7 @@ extension UIColor {
     }
     
     //MARK: -16进制字符串转为UIColor
-    public static func j_color( fromHexString hexString: String ) -> UIColor {
+    public static func j_color( hexString: String, alpha: CGFloat = 1.0 ) -> UIColor {
         
         var cString: String = hexString.trimmingCharacters(in: NSCharacterSet.whitespacesAndNewlines)
         
@@ -71,13 +71,13 @@ extension UIColor {
         Scanner.init(string: gString).scanHexInt32(&g)
         Scanner.init(string: bString).scanHexInt32(&b)
         
-        return RGBA(r: CGFloat(r), g: CGFloat(g), b: CGFloat(b), a: 1)
+        return RGBA(r: CGFloat(r), g: CGFloat(g), b: CGFloat(b), a: alpha)
     }
     
     //MARK: -随机色
-    public static func j_colorFromRamdom() -> UIColor {
+    public static func j_colorFromRamdom(alpha: CGFloat = 1.0) -> UIColor {
         
-        return RGBA(r: CGFloat(arc4random_uniform(256) / 255), g: CGFloat(arc4random_uniform(256) / 255), b: CGFloat(arc4random_uniform(256) / 255), a: 1.0)
+        return RGBA(r: CGFloat(arc4random_uniform(256) / 255), g: CGFloat(arc4random_uniform(256) / 255), b: CGFloat(arc4random_uniform(256) / 255), a: alpha)
     }
     
 }

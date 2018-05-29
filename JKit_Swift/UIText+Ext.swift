@@ -59,7 +59,7 @@ extension UITextView {
     }
     
     //MARK: -扩展TextView的placeHolder
-    var placeHolderTextView: UITextView? {
+    public var placeHolderTextView: UITextView? {
         
         get{
             
@@ -93,6 +93,8 @@ extension UITextView {
                 placeHolderTextView?.isUserInteractionEnabled = false
                 
                 placeHolderTextView?.text = newValue
+                
+                placeHolderTextView?.backgroundColor = UIColor.clear
                 
                 placeHolderTextView?.textColor = UIColor.gray
                 

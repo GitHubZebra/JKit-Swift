@@ -20,6 +20,7 @@ extension UIViewController {
         
         noteCenter.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: OperationQueue.main) { (note) in
             
+            
             self.view.addGestureRecognizer(viewDismissKeyboardTapGR)
 //            self.navigationController?.navigationBar.addGestureRecognizer(navBarDismissKeyboardTapGR)
         }
