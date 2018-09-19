@@ -27,7 +27,7 @@ public let JiPhone4: Bool = (JScreenHeight == 480)
 public let JiPhone5: Bool = (JScreenHeight == 568)
 public let JiPhone6: Bool = (JScreenHeight == 667)
 public let JiPhone6P: Bool = (JScreenHeight == 736)
-public let JiPhoneX: Bool = (JScreenHeight == 812)
+public let JiPhoneX: Bool = (JScreenHeight >= 812)
 
 public let JiOS8: Bool = (JVersion >= 8 && JVersion < 9)
 public let JiOS9: Bool = (JVersion >= 9 && JVersion < 10)
